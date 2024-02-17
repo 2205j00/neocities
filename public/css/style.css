@@ -1,0 +1,173 @@
+body,
+html {
+    font-family: 'ms gothic';
+    color: black;
+    font-size: 13px;
+    margin: 0;
+    background-color: #c0c0c0;
+    /*
+    background-size: 65px;
+    color: #fceaff;
+    background-image: var(--body-bg-image);*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* the "container" is what wraps your entire website */
+/* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+#container {
+    width: 900px;
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
+}
+
+#container a {
+    color: #d49a95;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+#flex {
+    display: flex;
+}
+
+/* this colors BOTH sidebars
+if you want to style them separately,
+create styles for #leftSidebar and #rightSidebar */
+aside {
+    background-color: #dedede;
+    border: 1px solid #d49a95;
+    width: 200px;
+    padding: 20px;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    height: 100vh;
+}
+
+
+/* this is the color of the main content area,
+between the sidebars! */
+main {
+    background-color: #dedede;
+    border: 1px solid #d49a95;
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #c0c0c0;
+    /* background color for footer */
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    /* this centers the footer text */
+}
+
+h1,
+h2,
+h3 {
+    color: #d49a95;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+  }
+
+strong {
+    /* this styles bold text */
+    color: #d49a95;
+}
+
+/* this is just a cool box, it's the darker colored one */
+.box {
+    background-color: black;
+    color: #dedede;
+    padding: 10px;
+}
+
+::-moz-selection {
+    color: #dedede;
+    background: #d49a95;
+}
+
+::selection {
+    color: #dedede;
+    background: #d49a95;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #dedede;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d49a95;
+}
+
+/* BELOW THIS POINT IS MEDIA QUERY */
+
+/* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
+
+@media screen and (max-width: 800px) {
+
+    #flex {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #container {
+        max-width: 100%;
+    }
+
+    aside {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        background-color: #dedede;
+        height: 165px;
+        order: 1;
+        position: relative;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    aside img {
+        position: sticky;
+        top: 0;
+        object-fit: contain;
+    }
+
+    main {
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 5%;
+        order: 2;
+    }
+}

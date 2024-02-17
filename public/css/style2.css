@@ -1,0 +1,174 @@
+/*[data-theme="light"] {
+  --color-bg: #dedede;
+  --color-fg: black;
+}
+
+[data-theme="dark"] {
+  --color-bg: black;
+  --color-fg: #dedede;
+}*/
+
+body,
+html {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #dedede; /*var(--color-bg);*/
+  color: black; /*var(--color-fg);*/
+  font-family: "ms gothic";
+  font-size: 13px;
+  line-height: 2;
+  margin: 0;
+}
+
+.header {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  /* for horizontal aligning of child divs */
+  justify-content: center;
+  /* for vertical aligning */
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 20px;
+}
+
+main {
+  padding: 0px 10px;
+  /* sizing for the post itself */
+  max-width: 50%;
+  min-width: 10%;
+  font-size: 13px;
+  margin-bottom: 5%;
+}
+
+a {
+  color: #d49a95;
+}
+
+a:hover {
+  color: #d49a95;
+}
+
+a:visited {
+  color: #d49a95;
+}
+
+ul {
+  list-style-type: none;
+}
+
+aside {
+  font-size: 15px;
+  /*hardcoded space from top of the div */
+  margin-top: 3%;
+  width: auto;
+  border-right: 2px solid #d49a95;
+  /* space from the top of the border (padding for the black line)*/
+  padding: 15px 0;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10%;
+  }
+
+aside a {
+  /* space between links */
+  padding: 6px 16px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #d49a95;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #d49a95;
+}
+
+footer {
+  position: relative;
+  font-size: 10px;
+  width: 99%;
+  height: auto;
+  margin-top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+::-moz-selection {
+  color: #dedede;
+  background: #d49a95;
+}
+
+::selection {
+  color: #dedede;
+  background: #d49a95;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dedede;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d49a95;
+}
+
+/*button {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  border: none;
+}*/
+
+/*---------------------*/
+
+@media screen and (max-width: 480px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+  }
+
+  aside:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 50%;
+    /* or 100px */
+    border-bottom: 2px solid #d49a95;
+  }
+
+  aside a{
+    float: left;
+    font-size: 15px;
+  }
+  
+  main {
+    max-width: 50%;
+  }
+
+  main pre {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+  }
+}
