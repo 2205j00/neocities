@@ -41,7 +41,7 @@ function updateThemeOnHtmlEl({ theme }) {
  * On page load:
  */
 
-/**
+/*
  * 1. Grab what we need from the DOM and system settings on page load
  */
 const button = document.querySelector("[data-theme-toggle]");
