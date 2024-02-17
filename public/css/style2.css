@@ -1,4 +1,4 @@
-/*[data-theme="light"] {
+[data-theme="light"] {
   --color-bg: #dedede;
   --color-fg: black;
 }
@@ -6,15 +6,15 @@
 [data-theme="dark"] {
   --color-bg: black;
   --color-fg: #dedede;
-}*/
+}
 
 body,
 html {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #dedede; /*var(--color-bg);*/
-  color: black; /*var(--color-fg);*/
+  background-color: var(--color-bg);
+  color: var(--color-fg);
   font-family: "ms gothic";
   font-size: 13px;
   line-height: 2;
@@ -122,11 +122,11 @@ footer {
   background: #d49a95;
 }
 
-/*button {
+button {
   background-color: var(--color-bg);
   color: var(--color-fg);
   border: none;
-}*/
+}
 
 /*---------------------*/
 
