@@ -5,9 +5,10 @@ html {
   flex-direction: column;
   background-color: #dedede;
   color: black;
+  scrollbar-color: #658cbb #dedede;
   font-family: "ms gothic";
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.5;
   margin: 0;
 }
 
