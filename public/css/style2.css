@@ -37,15 +37,15 @@ main {
 }
 
 a {
-  color: #658cbb;
+  color: #be1f35;
 }
 
 a:hover {
-  color: #658cbb;
+  color: #be1f35;
 }
 
 a:visited {
-  color: #658cbb;
+  color: #be1f35;
 }
 
 h1 {
@@ -65,7 +65,7 @@ nav {
   /*hardcoded space from top of the div */
   margin-top: 3%;
   width: auto;
-  border-right: 1px solid #658cbb;
+  border-right: 1px solid #be1f35;
   /* space from the top of the border (padding for the black line)*/
   padding: 15px 0;
   overflow: auto;
@@ -79,7 +79,7 @@ nav a {
   padding: 6px 16px 6px 16px;
   text-decoration: none;
   font-size: 15px;
-  color: #658cbb;
+  color: #be1f35;
   display: block;
 }
 
@@ -96,12 +96,12 @@ footer {
 
 ::-moz-selection {
   color: #dedede;
-  background: #658cbb;
+  background: #be1f35;
 }
 
 ::selection { 
   color: #dedede;
-  background: #658cbb;
+  background: #be1f35;
 }
 
 ::-webkit-scrollbar { 
@@ -113,7 +113,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #658cbb;
+  background: #be1f35;
 }
 
 /*---------------------*/
@@ -142,7 +142,7 @@ footer {
     height: 1px;
     width: 50%;
     /* or 100px */
-    border-bottom: 1px solid #658cbb;
+    border-bottom: 1px solid #be1f35;
   }
 
   nav a{
