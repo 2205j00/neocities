@@ -37,15 +37,8 @@ main {
   margin-bottom: 5%;
 }
 
-a {
-  color: #658cbb;
-}
-
-a:hover {
-  color: #658cbb;
-}
-
-a:visited {
+a:link, a:hover, a:visited {
+  font-weight: bold;
   color: #658cbb;
 }
 
