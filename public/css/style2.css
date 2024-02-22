@@ -96,7 +96,7 @@ footer {
   background: #d49a95;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar { 
   width: 5px;
 }
 
