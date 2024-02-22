@@ -6,6 +6,7 @@ html {
   background-color: #dedede;
   color: black;
   scrollbar-color: #658cbb #dedede;
+  scrollbar-width: 5px;
   font-family: "ms gothic";
   font-size: 14px;
   line-height: 1.5;
