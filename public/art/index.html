@@ -9,25 +9,6 @@
   <link href="../css/style2.css" rel="stylesheet">
 
   <style>
-    nav a {
-      font-size: 14px;
-      text-decoration: underline;
-    }
-
-    .entry {
-      color: #d49a95;
-      cursor: pointer;
-      padding: 10px;
-    }
-
-    .entry-content {
-      display: none;
-    }
-
-    .show {
-      display: block;
-    }
-
     @media screen and (max-width: 480px) {
       .sidenav:before {
         left: 25%;
@@ -52,6 +33,7 @@
       <nav>
         <center>
             <br>
+          <div class="entry" data-content="#content-0">index</div>
           <div class="entry" data-content="#content-a">drawing</div>
           <div class="entry" data-content="#content-b">painting</div>
           <div class="entry" data-content="#content-c">textiles</div>
@@ -64,7 +46,7 @@
 
       <main>
         <center>
-          <div class="show entry-content">
+          <div class="show entry-content" id="content-0">
             <h2>NÃO ROUBE OU ENCHO SUA CARA DE DENÚNCIAS</h2>
             <p>sim eh isso mesmo...</p>
           </div>

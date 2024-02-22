@@ -94,6 +94,21 @@ footer {
   right: 0;
 }
 
+.entry {
+  color: #658cbb;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.entry-content {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 ::-moz-selection {
   color: #dedede;
   background: #658cbb;
