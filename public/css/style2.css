@@ -91,7 +91,7 @@ footer {
   background: #658cbb;
 }
 
-::selection {
+::selection { 
   color: #dedede;
   background: #658cbb;
 }
