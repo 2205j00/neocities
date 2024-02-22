@@ -1,20 +1,10 @@
-[data-theme="light"] {
-  --color-bg: #dedede;
-  --color-fg: black;
-}
-
-[data-theme="dark"] {
-  --color-bg: black;
-  --color-fg: #dedede;
-}
-
 body,
 html {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-bg);
-  color: var(--color-fg);
+  background-color: #dedede;
+  color: black;
   font-family: "ms gothic";
   font-size: 13px;
   line-height: 2;
@@ -62,12 +52,12 @@ ul {
   list-style-type: none;
 }
 
-aside {
+nav {
   font-size: 15px;
   /*hardcoded space from top of the div */
   margin-top: 3%;
   width: auto;
-  border-right: 2px solid #d49a95;
+  border-right: 1px solid #d49a95;
   /* space from the top of the border (padding for the black line)*/
   padding: 15px 0;
   overflow: auto;
@@ -76,17 +66,13 @@ aside {
   top: 10%;
   }
 
-aside a {
+nav a {
   /* space between links */
   padding: 6px 16px 6px 16px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 13px;
   color: #d49a95;
   display: block;
-}
-
-.sidenav a:hover {
-  color: #d49a95;
 }
 
 footer {
@@ -122,12 +108,6 @@ footer {
   background: #d49a95;
 }
 
-button {
-  background-color: var(--color-bg);
-  color: var(--color-fg);
-  border: none;
-}
-
 /*---------------------*/
 
 @media screen and (max-width: 480px) {
@@ -137,7 +117,7 @@ button {
     margin-top: 10%;
   }
 
-  aside {
+  nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -147,19 +127,19 @@ button {
     border-right: none;
   }
 
-  aside:before {
+  nav:before {
     content: "";
     position: absolute;
     bottom: 0;
     height: 1px;
     width: 50%;
     /* or 100px */
-    border-bottom: 2px solid #d49a95;
+    border-bottom: 1px solid #d49a95;
   }
 
-  aside a{
+  nav a{
     float: left;
-    font-size: 15px;
+    font-size: 13px;
   }
   
   main {
