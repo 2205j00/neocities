@@ -12,12 +12,12 @@ html {
   margin: 0;
 }
 
-.header {
+header {
   margin-top: 2.5%;
   margin-bottom: 2.5%;
 }
 
-.main {
+.content {
   display: flex;
   flex-wrap: wrap;
   /* for horizontal aligning of child divs */
