@@ -48,6 +48,14 @@ a:visited {
   color: #658cbb;
 }
 
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
 ul {
   list-style-type: none;
 }
