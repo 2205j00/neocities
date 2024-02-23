@@ -72,7 +72,6 @@ nav {
 nav a {
   /* space between links */
   padding: 6px 16px 6px 16px;
-  text-decoration: none;
   font-size: 14px;
   color: #658cbb;
   display: block;
