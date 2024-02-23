@@ -34,7 +34,6 @@ main {
   /* sizing for the post itself */
   max-width: 50%;
   min-width: 10%;
-  width: 25%;
   font-size: 14px;
   margin-bottom: 5%;
 }
@@ -161,8 +160,7 @@ footer {
   }
   
   main {
-    max-width: 100%;
-    width: 80%;
+    max-width: 50%;
   }
 
   main pre {
