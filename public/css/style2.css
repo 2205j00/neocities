@@ -5,7 +5,7 @@ html {
   flex-direction: column;
   background-color: #dedede;
   color: black;
-  scrollbar-color: #658cbb #dedede;
+  scrollbar-color: #a7a7a7 #dedede;
   scrollbar-width: thin;
   font-family: "ms gothic";
   font-size: 14px;
@@ -40,7 +40,7 @@ main {
 
 a:link, a:hover, a:visited {
   font-weight: bold;
-  color: #658cbb;
+  color: #a7a7a7;
 }
 
 h1 {
@@ -60,7 +60,7 @@ nav {
   /*hardcoded space from top of the div */
   margin-top: 3%;
   width: auto;
-  border-right: 1px solid #658cbb;
+  border-right: 1px solid #a7a7a7;
   /* space from the top of the border (padding for the black line)*/
   padding: 14px 0;
   overflow: auto;
@@ -73,7 +73,7 @@ nav a {
   /* space between links */
   padding: 6px 16px 6px 16px;
   font-size: 14px;
-  color: #658cbb;
+  color: #a7a7a7;
   display: block;
 }
 
@@ -89,7 +89,7 @@ footer {
 }
 
 .entry {
-  color: #658cbb;
+  color: #a7a7a7;
   cursor: pointer;
   font-size: 13px;
   padding: 10px;
@@ -105,12 +105,12 @@ footer {
 
 ::-moz-selection {
   color: #dedede;
-  background: #658cbb;
+  background: #a7a7a7;
 }
 
 ::selection { 
   color: #dedede;
-  background: #658cbb;
+  background: #a7a7a7;
 }
 
 ::-webkit-scrollbar { 
@@ -122,7 +122,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #658cbb;
+  background: #a7a7a7;
 }
 
 /*---------------------*/
@@ -151,7 +151,7 @@ footer {
     height: 1px;
     width: 50%;
     /* or 100px */
-    border-bottom: 1px solid #658cbb;
+    border-bottom: 1px solid #a7a7a7;
   }
 
   nav a{
